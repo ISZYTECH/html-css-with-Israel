@@ -1,6 +1,16 @@
 
+/* SHOW ON DESKTOP */
+@media (min-width:801) {
+    #Mcontainer{
+        display: none;
+
+
+    }
+
+}
 body{
     margin: 0;
+
 }
 
 .super-parent {
@@ -75,6 +85,7 @@ nav > h3 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 @media (min-width: 769px) {
     .show-on-mobile {
         display: none;
@@ -83,7 +94,7 @@ nav > h3 {
      border-style: solid;
      height: 500px;
      margin-top: 180px;
-     /* display: flex; */
+     /* display: flex;  */
      flex-direction: column;
      align-items: center;
      justify-content: center; 
@@ -103,27 +114,29 @@ nav > h3 {
     border-style: solid;
     height: 500px;
     margin-top: 180px;
-    /* display: flex; */
+    /* display: flex;  */
     flex-direction: column;
     align-items: center;
     justify-content: center; 
 }
-}
+} 
 
 #container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #024202;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    border: #FF00FF solid 1px;
+    border: #160116 solid 1px;
     padding: 40px;
     border-radius: 6px;
-    box-shadow: #FF00FF 4px 5px 5px;
+    box-shadow: #160116 4px 5px 5px;
+    background-color: #fff;
     
 }
 
@@ -171,10 +184,69 @@ label {
 
 #divider {
     width: 1px;
-    background-color: #555;
+    background-color: rgb(2, 66, 2);
     margin-right: 30px;
 }
 
+
+#Mcontainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Mrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #b6a4b6 solid 1px;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: #b6a4b6 4px 5px 5px;
+    background: rgb(1, 49, 1);
+    
+}
+
+.down-row button{
+    color: #fff;
+    height: 55px;
+    width: 260px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    background: linear-gradient(109deg,rgb(2, 31, 2),rgb(5, 117, 5));
+}
+
+
+.down-row div{
+    margin-top: 20px;
+}
+
+input{
+    font-size: 18px;
+    background: linear-gradient(129deg,rgb(62, 104, 62), white, rgb(62, 104, 62));
+    outline: #fff;    
+}
+
+input::placeholder{
+    color: black;
+    font-size: larger;
+}
+
+
+
+
+@media (max-width: 800px) {
+    #container{
+        display: none;
+
+    }
+   
+    
+}
 
 /* 
 static
